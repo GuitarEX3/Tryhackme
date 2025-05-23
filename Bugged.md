@@ -469,6 +469,64 @@ cdd1b1c0-1c40-4b0f-8e22-61b357548b7d
 
 
 
+![Image](https://github.com/user-attachments/assets/a4b11e03-13ea-4da2-802e-24aaeba534f9)
+
+
+
+
+
+
+![Image](https://github.com/user-attachments/assets/73471cf3-7c36-46a6-a05f-6a098d9409bf)
+
+
+
+
+
+
+We can see that it responds based on the values we changed, so after that, we can modify it to retrieve the flag directly.
+
+จะเห็นได้ว่ามันทำงานตามค่าที่เปลี่ยนหลังจากนั้นเราก็เปลี่ยนเป็น เอาธงได้เลย
+
+
+
+
+
+![Image](https://github.com/user-attachments/assets/76db0977-44d0-4be7-be46-c85bd3563f21)
+
+
+
+
+
+![Image](https://github.com/user-attachments/assets/a5edbb19-db18-4786-b257-f7a2f219cd6d)
+
+
+
+
+
+complete! ✅
+เเล้วก็เสร็จเป็นที่เรียบร้อย
+
+
+🛡️ Vulnerability Summary:
+
+   Lack of access control on the MQTT broker
+   Anyone can connect, subscribe, and publish without authentication.
+
+   A backend system automatically executes commands received via MQTT
+   This leads to a command injection over MQTT vulnerability.
+
+   The command format is base64(JSON)
+   The pattern is predictable and can be exploited systematically.
+
+
+สรุปช่องโหว่:
+
+   การไม่มีการป้องกันการเข้าถึง MQTT broker
+
+   มีระบบ backend ที่รันคำสั่งจากข้อมูลที่มาทาง MQTT อย่างอัตโนมัติ (command injection over MQTT)
+
+   รูปแบบคำสั่งเป็น base64(JSON) → มี pattern ที่ชัดเจนให้ exploit ต่อได้
+
 
 
 
