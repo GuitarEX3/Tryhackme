@@ -1,4 +1,6 @@
 The explanation will be in both Thai and English.
+
+
 คำอธิบายจะมีทั้งภาษาไทยและภาษาอังกฤษ
 _____________________________________________________________________________________
 Hello everyone, today I'm going to explain a room called 'Bugged'. Let's get started.
