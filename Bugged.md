@@ -7,4 +7,6 @@ Let's start with the first step.
 มาเริ่มกันที่ขั้นตอนแรกเลย
 
 nmap -sV <ip>
+
+
 ![Image](https://github.com/user-attachments/assets/076e4653-bd17-4d51-9a85-705350c27606)
